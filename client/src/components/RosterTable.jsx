@@ -8,6 +8,7 @@ import {
   Td,
   TableCaption,
   TableContainer,
+  Center,
 } from "@chakra-ui/react";
 
 import { drivers } from "../drivers";
@@ -27,29 +28,65 @@ const RosterTable = () => {
         <TableCaption>Imperial to metric conversion factors</TableCaption>
         <Thead>
           <Tr>
-            <Th>Names</Th>
-            <Th>Band</Th>
-            <Th>Sunday</Th>
-            <Th>Monday</Th>
-            <Th>Tuesday</Th>
-            <Th>Wednesday</Th>
-            <Th>Thursday</Th>
-            <Th>Friday</Th>
-            <Th>Saturday</Th>
+            <Th>
+              <Center>Names</Center>
+            </Th>
+            <Th>
+              <Center>Band</Center>
+            </Th>
+            <Th>
+              <Center>Sunday</Center>
+            </Th>
+            <Th>
+              <Center>Monday</Center>
+            </Th>
+            <Th>
+              <Center>Tuesday</Center>
+            </Th>
+            <Th>
+              <Center>Wednesday</Center>
+            </Th>
+            <Th>
+              <Center>Thursday</Center>
+            </Th>
+            <Th>
+              <Center>Friday</Center>
+            </Th>
+            <Th>
+              <Center>Saturday</Center>
+            </Th>
           </Tr>
         </Thead>
         <Tbody>
           {drivers.map((driver) => (
             <Tr>
-              <Td>{driver.name}</Td>
-              <Td>{driver.minHours}</Td>
-              <Td></Td>
-              <Td>-</Td>
-              <Td>-</Td>
-              <Td>-</Td>
-              <Td>-</Td>
-              <Td>-</Td>
-              <Td>-</Td>
+              <Td>
+                <Center>{driver.name}</Center>
+              </Td>
+              <Td>
+                <Center>{driver.minHours}</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
+              <Td>
+                <Center>-</Center>
+              </Td>
             </Tr>
           ))}
         </Tbody>
